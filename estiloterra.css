@@ -1,0 +1,225 @@
+@font-face {
+font-family: Simplicity;
+src: url("fonts/simplicity.ttf");
+}
+
+
+
+body {
+margin: 0;
+padding: 0;
+background-color: #BE796A;
+font-family: Simplicity, sans-serif;
+font-size: 1.5em;
+
+}
+
+
+.navegar {
+padding:0;
+margin-left:0%;
+padding:0;
+background: linear-gradient(to right, #D1715C, #4F251C)
+
+}
+ .navegar ul li {
+ padding: 0.3em 0.3em;
+	 display:inline-block;
+
+ }
+.boton a:link, .boton  a:visited {
+  
+  background-color:#D1AC5C;
+  color: #20087F;
+  padding: 0.5em;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+   border-radius: 15px;
+
+
+}
+.boton a:hover{
+
+  background-color: #81D15C;
+  box-shadow: 5px 5px 3px #4F251C;
+}
+
+.boton a:active{
+position:relative;
+top:0.2em;
+box-shadow:none;
+}
+
+
+.main{
+
+	background-color: rgba(209, 172, 92, 0.4);
+	border-radius: 16px;
+	margin:auto;
+	width:100%;
+	text-align:center;
+	}
+	
+.main p, .main h1{
+	padding:1em;
+;
+}
+
+.not {
+	text-align:center;
+	background-repeat:no-repeat;
+	margin-top: 1em;
+}
+
+
+
+.foto img {
+	margin: auto;
+	padding: 1em;
+	height:100%;
+	float: left;
+}
+
+.facade{
+	width:40%;
+	float:left;
+	
+	}
+
+.dir {
+float: right;
+font-size: 0.8em;
+	padding-left: 2em;
+	text-align:right;
+	margin-left:2em;
+}
+
+.mapa{
+	text-align:center;
+}
+.mapa h3{
+	padding:2em;
+}
+
+ul{padding: 0;}
+
+footer{
+width: 100%;
+}
+
+footer ul{text-align: center;}
+footer ul li{
+	text-align: center;
+	padding: 0em 3em;
+	margin-top: 0;
+display: inline-block;}
+
+footer img{
+	transition: transform 2s;
+	transition-timing-function:ease;
+	width: 2em;
+
+	}
+
+
+footer a:hover img{
+transform: scale(1.5, 1.5);
+filter: drop-shadow(0px 0px 3px palegreen);
+}
+
+
+
+ table {
+  border-collapse: collapse;
+  margin: 2em;
+  
+}
+
+table, th, td {
+	text-align: center;
+  border: 2px solid #A52A2A;
+ 
+}
+
+th, td{
+padding: 0.5em;
+}
+
+table img{
+margin: 0;
+padding: 0.2em;
+border-radius: 10%;
+}
+tr:nth-child(even) {background-color: #CD8484;}
+
+
+
+
+/*
+animaciones y diseño responsivo
+
+*/ 
+
+ @media only screen and (max-width: 600px) {
+*{
+font-size: 16px;
+} 	
+ 	
+ 	
+ .foto {display: block;
+ } 
+ .foto img{
+	 width:100%;
+	 height:auto;
+         clear: both;
+         margin:auto;
+         padding:0.2em;
+
+ }
+ 
+ header{
+display:none; 
+ 
+ }
+  .navegar ul li {
+ padding: 0.2em 1em;
+	 display: block;
+ }
+.boton a:link, .boton  a:visited {
+  
+  background-color:#D1AC5C;
+  color: #20087F;
+  padding: 0em;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+   border-radius: 15px;
+
+
+}
+.boton a:hover{
+
+  background-color: #81D15C;
+  box-shadow: 5px 5px 3px #4F251C;
+}
+
+.boton a:active{
+position:relative;
+top:0.2em;
+box-shadow:none;
+}
+table img{
+width: 4em;
+height: 4em;
+margin: 0;
+padding: 0.2em;
+border-radius: 10%;
+}
+
+table, th, td {
+	text-align: center;
+  border: 1px solid #A52A2A;
+ 
+}
+}
